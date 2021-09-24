@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/dfo/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/dfo/">
+    <Prefix name="" IRI="https://w3id.org/dfo/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="dfo" IRI="https://w3id.org/dfo/"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="reg" IRI="http://purl.org/linked-data/registry#"/>
+    <Prefix name="sio" IRI="https://semanticscience.org/resource/"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="ordo" IRI="http://www.orpha.net/ORDO/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>https://orcid.org/0000-0002-4208-3583</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:rights"/>
+        <Literal>This ontology is distributed under a Attribution 4.0 International (CC BY 4.0) License - https://creativecommons.org/licenses/by/4.0/. Copyright: University Medical Center Groningen (2019-2021).</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal>Attribution 4.0 International (CC BY 4.0)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal>Eleanor Hyde &lt;e.j.hyde@umcg.nl&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
+        <IRI>https://github.com/molgenis/DatabankFamiliesOntology</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <Literal>2021-10-01</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal>Databank Families Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal>Here we describe the Databank Families Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal>K. Joeri van der Velde &lt;k.j.van.der.velde@umcg.nl&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>0.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/LicenseDocument"/>
+        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Romin Pajouheshnia &lt;r.pajouheshnia@uu.nl&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:language"/>
+        <Literal>en</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>https://orcid.org/0000-0002-0979-3401</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal>Morris A. Swertz &lt;m.a.swertz@umcg.nl&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>https://orcid.org/0000-0002-0934-8375</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Rosa Gini &lt;rosa.gini@ars.toscana.it&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>https://orcid.org/0000-0003-2744-0017</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>https://orcid.org/0000-0002-6250-877X</IRI>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C61393"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:NCIT_C79273"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Databank_Family"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Hospital_Administrative_Records"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Pharmacy_Dispensings_Records"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Primary_Care_Medical_Records"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/LicenseDocument"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:language"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Databank_Family"/>
+        <Class abbreviatedIRI="obo:NCIT_C61393"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Databank_Family"/>
+        <Class abbreviatedIRI="obo:NCIT_C79273"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Hospital_Administrative_Records"/>
+        <Class IRI="Databank_Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Pharmacy_Dispensings_Records"/>
+        <Class IRI="Databank_Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Primary_Care_Medical_Records"/>
+        <Class IRI="Hospital_Administrative_Records"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>Databank_Family</IRI>
+        <Literal>Here a detailed description of databank family.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Databank_Family</IRI>
+        <IRI>DFO_0000001</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Databank_Family</IRI>
+        <Literal>Databank Family</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>Hospital_Administrative_Records</IRI>
+        <Literal>Hospital Administrative Records. Originator: Healthcare payer. Organizations which collect data: Healthcare service providers; hospitals. Prompts for records in the family data bank: Discharge from a hospitalization; a specialist encounter or emergency room visit may also prompt records. Typical content: Diagnosis/signs/symptoms observed; main diagnosis that led to the hospitalization; administration of procedures; specialty of the ward; outcome.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Hospital_Administrative_Records</IRI>
+        <AbbreviatedIRI>obo:NCIT_C15253</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Hospital_Administrative_Records</IRI>
+        <Literal>Hospital Administrative Records</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>Pharmacy_Dispensings_Records</IRI>
+        <Literal>Pharmacy Dispensings Records</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Pharmacy_Dispensings_Records</IRI>
+        <AbbreviatedIRI>obo:OMIT_0011595</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Pharmacy_Dispensings_Records</IRI>
+        <Literal>Pharmacy Dispensings Records</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>Primary_Care_Medical_Records</IRI>
+        <Literal>Primary Care Medical Records. Originator: Network of primary care practices. Organizations which collect data: Primary care practices. Prompts for records in the family data bank: Contact between patients and their primary care practice: face-to-face/telephone/online. Records may be prompted when hospital discharge information is received by the practice (e.g. UK data banks). Typical content: Registration with the practice; diagnosis/signs/symptoms; prescription of diagnostic tests/medicines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Primary_Care_Medical_Records</IRI>
+        <IRI>DFO_0000002</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Primary_Care_Medical_Records</IRI>
+        <Literal>Primary Care Medical Records</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+
