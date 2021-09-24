@@ -1,0 +1,52 @@
+@prefix dfo: <https://w3id.org/dfo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sio: <https://semanticscience.org/resource/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ordo: <http://www.orpha.net/ORDO/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix reg:  <http://purl.org/linked-data/registry#> .
+
+<https://w3id.org/dfo/> a owl:Ontology;
+  dc:title "Databank Families Ontology";
+  dc:description "Here we describe the Databank Families Ontology";
+  dc:date "2021-10-01";
+  owl:versionInfo "0.1";
+  dc:language "en";
+  dc:rights "This ontology is distributed under a Attribution 4.0 International (CC BY 4.0) License - https://creativecommons.org/licenses/by/4.0/. Copyright: University Medical Center Groningen (2019-2021).";
+  dc:publisher <https://github.com/molgenis/DatabankFamiliesOntology>;
+  <http://purl.org/dc/terms/license> "Attribution 4.0 International (CC BY 4.0)";
+  <http://purl.org/dc/terms/LicenseDocument> <https://creativecommons.org/licenses/by/4.0/>;
+  dc:creator 
+    "Rosa Gini <rosa.gini@ars.toscana.it>", <https://orcid.org/0000-0002-6250-877X>,
+    "Romin Pajouheshnia <r.pajouheshnia@uu.nl>", <https://orcid.org/0000-0002-4208-3583>;
+  dc:contributor
+   "Eleanor Hyde <e.j.hyde@umcg.nl>", <https://orcid.org/0000-0003-2744-0017>,
+   "K. Joeri van der Velde <k.j.van.der.velde@umcg.nl>", <https://orcid.org/0000-0002-0934-8375>,
+   "Morris A. Swertz <m.a.swertz@umcg.nl>", <https://orcid.org/0000-0002-0979-3401> .
+
+dfo:Databank_Family a owl:Class;
+  rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C79273>, <http://purl.obolibrary.org/obo/NCIT_C61393>;
+  rdfs:isDefinedBy <https://w3id.org/dfo/DFO_0000001>;
+  rdfs:label "Databank Family";
+  dc:description "Here a detailed description of databank family." .
+
+dfo:Hospital_Administrative_Records a owl:Class;
+  rdfs:subClassOf dfo:Databank_Family;
+  rdfs:isDefinedBy <http://purl.obolibrary.org/obo/NCIT_C15253>;
+  rdfs:label "Hospital Administrative Records";
+  dc:description "Hospital Administrative Records. Originator: Healthcare payer. Organizations which collect data: Healthcare service providers; hospitals. Prompts for records in the family data bank: Discharge from a hospitalization; a specialist encounter or emergency room visit may also prompt records. Typical content: Diagnosis/signs/symptoms observed; main diagnosis that led to the hospitalization; administration of procedures; specialty of the ward; outcome." .
+
+dfo:Primary_Care_Medical_Records a owl:Class;
+  rdfs:subClassOf dfo:Hospital_Administrative_Records;
+  rdfs:isDefinedBy <https://w3id.org/dfo/DFO_0000002>;
+  rdfs:label "Primary Care Medical Records";
+  dc:description "Primary Care Medical Records. Originator: Network of primary care practices. Organizations which collect data: Primary care practices. Prompts for records in the family data bank: Contact between patients and their primary care practice: face-to-face/telephone/online. Records may be prompted when hospital discharge information is received by the practice (e.g. UK data banks). Typical content: Registration with the practice; diagnosis/signs/symptoms; prescription of diagnostic tests/medicines." .
+
+dfo:Pharmacy_Dispensings_Records a owl:Class;
+  rdfs:subClassOf dfo:Databank_Family;
+  rdfs:isDefinedBy <http://purl.obolibrary.org/obo/OMIT_0011595>;
+  rdfs:label "Pharmacy Dispensings Records";
+  dc:description "Pharmacy Dispensings Records" .
