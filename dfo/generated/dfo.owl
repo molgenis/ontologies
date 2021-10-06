@@ -12,7 +12,6 @@
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="reg" IRI="http://purl.org/linked-data/registry#"/>
     <Prefix name="sio" IRI="https://semanticscience.org/resource/"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
@@ -101,10 +100,28 @@
         <Class abbreviatedIRI="obo:NCIT_C79273"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Birth_Registry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Congenital_Anomaly_Registry"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Databank_Family"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Death_Registry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Exemptions_From_Copayment"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Hospital_Administrative_Records"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Induced_Terminations_Registry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Inhabitant_Registry"/>
     </Declaration>
     <Declaration>
         <Class IRI="Pharmacy_Dispensings_Records"/>
@@ -113,19 +130,25 @@
         <Class IRI="Primary_Care_Medical_Records"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Registration_With_Healthcare_System"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/LicenseDocument"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:rights"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:language"/>
@@ -137,11 +160,16 @@
         <AnnotationProperty abbreviatedIRI="dc:description"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:date"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
     </Declaration>
+    <SubClassOf>
+        <Class IRI="Birth_Registry"/>
+        <Class IRI="Databank_Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Congenital_Anomaly_Registry"/>
+        <Class IRI="Databank_Family"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="Databank_Family"/>
         <Class abbreviatedIRI="obo:NCIT_C61393"/>
@@ -151,7 +179,23 @@
         <Class abbreviatedIRI="obo:NCIT_C79273"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Death_Registry"/>
+        <Class IRI="Databank_Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Exemptions_From_Copayment"/>
+        <Class IRI="Databank_Family"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Hospital_Administrative_Records"/>
+        <Class IRI="Databank_Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Induced_Terminations_Registry"/>
+        <Class IRI="Databank_Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Inhabitant_Registry"/>
         <Class IRI="Databank_Family"/>
     </SubClassOf>
     <SubClassOf>
@@ -160,12 +204,46 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Primary_Care_Medical_Records"/>
-        <Class IRI="Hospital_Administrative_Records"/>
+        <Class IRI="Databank_Family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Registration_With_Healthcare_System"/>
+        <Class IRI="Databank_Family"/>
     </SubClassOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>Birth_Registry</IRI>
+        <Literal>A birth registry typically contains information on the mother, on the pregnancy, on the delivery, and on the child(ren).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Birth_Registry</IRI>
+        <IRI>DFO_0000005</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Birth_Registry</IRI>
+        <Literal>Birth Registry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>Congenital_Anomaly_Registry</IRI>
+        <Literal>A congenital anomaly registry typically contain the EUROCAT core variables.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Congenital_Anomaly_Registry</IRI>
+        <IRI>DFO_0000007</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Congenital_Anomaly_Registry</IRI>
+        <Literal>Congenital Anomaly Registry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>Databank_Family</IRI>
-        <Literal>Here a detailed description of databank family.</Literal>
+        <Literal>A databank family is a group of data banks with similar record prompts and originators.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
@@ -179,13 +257,43 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>Death_Registry</IRI>
+        <Literal>A death registry typically contains the principal cause of death.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Death_Registry</IRI>
+        <IRI>DFO_0000011</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Death_Registry</IRI>
+        <Literal>Death Registry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>Exemptions_From_Copayment</IRI>
+        <Literal>An exemption from copayment typically contains the cause for exemption.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Exemptions_From_Copayment</IRI>
+        <IRI>DFO_0000010</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Exemptions_From_Copayment</IRI>
+        <Literal>Exemptions From Copayment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>Hospital_Administrative_Records</IRI>
-        <Literal>Hospital Administrative Records. Originator: Healthcare payer. Organizations which collect data: Healthcare service providers; hospitals. Prompts for records in the family data bank: Discharge from a hospitalization; a specialist encounter or emergency room visit may also prompt records. Typical content: Diagnosis/signs/symptoms observed; main diagnosis that led to the hospitalization; administration of procedures; specialty of the ward; outcome.</Literal>
+        <Literal>A hospital administrative records typically contains diagnosis, signs, symptoms observed, main diagnosis that led to the hospitalization, administration of procedures, specialty of the ward, and outcome.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>Hospital_Administrative_Records</IRI>
-        <AbbreviatedIRI>obo:NCIT_C15253</AbbreviatedIRI>
+        <IRI>DFO_0000002</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -194,13 +302,43 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>Induced_Terminations_Registry</IRI>
+        <Literal>An induced terminations registry typically contains information on the circumstances of the termination, on the pregnancy, and on the woman.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Induced_Terminations_Registry</IRI>
+        <IRI>DFO_0000006</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Induced_Terminations_Registry</IRI>
+        <Literal>Induced Terminations Registry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>Inhabitant_Registry</IRI>
+        <Literal>An inhabitant registry typically contains the immigration date, emigration date, and birth date.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Inhabitant_Registry</IRI>
+        <IRI>DFO_0000008</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Inhabitant_Registry</IRI>
+        <Literal>Inhabitant Registry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>Pharmacy_Dispensings_Records</IRI>
-        <Literal>Pharmacy Dispensings Records</Literal>
+        <Literal>A pharmacy dispensings record typically contains the national code of the medicinal product, ATC code, and amount dispensed.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>Pharmacy_Dispensings_Records</IRI>
-        <AbbreviatedIRI>obo:OMIT_0011595</AbbreviatedIRI>
+        <IRI>DFO_0000004</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -210,17 +348,32 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>Primary_Care_Medical_Records</IRI>
-        <Literal>Primary Care Medical Records. Originator: Network of primary care practices. Organizations which collect data: Primary care practices. Prompts for records in the family data bank: Contact between patients and their primary care practice: face-to-face/telephone/online. Records may be prompted when hospital discharge information is received by the practice (e.g. UK data banks). Typical content: Registration with the practice; diagnosis/signs/symptoms; prescription of diagnostic tests/medicines.</Literal>
+        <Literal>A primary care medical record typically contains registration with the practice, diagnosis, signs, symptoms observed, prescription of diagnostic tests, and prescription of medicines.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>Primary_Care_Medical_Records</IRI>
-        <IRI>DFO_0000002</IRI>
+        <IRI>DFO_0000003</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Primary_Care_Medical_Records</IRI>
         <Literal>Primary Care Medical Records</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>Registration_With_Healthcare_System</IRI>
+        <Literal>A registration with a healthcare system typically contains the date of registration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>Registration_With_Healthcare_System</IRI>
+        <IRI>DFO_0000009</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Registration_With_Healthcare_System</IRI>
+        <Literal>Registration With Healthcare System</Literal>
     </AnnotationAssertion>
 </Ontology>
 
