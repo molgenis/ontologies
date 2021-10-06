@@ -54,40 +54,40 @@ dfo:Birth_Registry a owl:Class;
   rdfs:subClassOf dfo:Databank_Family;
   rdfs:isDefinedBy <https://w3id.org/dfo/DFO_0000005>;
   rdfs:label "Birth Registry";
-  dc:description "A birth registry typically contains information on the mother, on the pregnancy, on the delivery, and on the child(ren).";
+  dc:description "A birth registry typically contains information on the mother, on the pregnancy, on the delivery, and on the child(ren)." .
 
 dfo:Induced_Terminations_Registry a owl:Class;
   rdfs:subClassOf dfo:Databank_Family;
   rdfs:isDefinedBy <https://w3id.org/dfo/DFO_0000006>;
   rdfs:label "Induced Terminations Registry";
-  dc:description "An induced terminations registry typically contains information on the circumstances of the termination, on the pregnancy, and on the woman.";
+  dc:description "An induced terminations registry typically contains information on the circumstances of the termination, on the pregnancy, and on the woman." .
 
 dfo:Congenital_Anomaly_Registry a owl:Class;
   rdfs:subClassOf dfo:Databank_Family;
   rdfs:isDefinedBy <https://w3id.org/dfo/DFO_0000007>;
   rdfs:label "Congenital Anomaly Registry";
-  dc:description "A congenital anomaly registry typically contain the EUROCAT core variables.";
+  dc:description "A congenital anomaly registry typically contain the EUROCAT core variables." .
 
 dfo:Inhabitant_Registry a owl:Class;
   rdfs:subClassOf dfo:Databank_Family;
   rdfs:isDefinedBy <https://w3id.org/dfo/DFO_0000008>;
   rdfs:label "Inhabitant Registry";
-  dc:description "An inhabitant registry typically contains the immigration date, emigration date, and birth date.";
+  dc:description "An inhabitant registry typically contains the immigration date, emigration date, and birth date." .
 
 dfo:Registration_With_Healthcare_System a owl:Class;
   rdfs:subClassOf dfo:Databank_Family;
   rdfs:isDefinedBy <https://w3id.org/dfo/DFO_0000009>;
   rdfs:label "Registration With Healthcare System";
-  dc:description "A registration with a healthcare system typically contains the date of registration.";
+  dc:description "A registration with a healthcare system typically contains the date of registration." .
 
 dfo:Exemptions_From_Copayment a owl:Class;
   rdfs:subClassOf dfo:Databank_Family;
   rdfs:isDefinedBy <https://w3id.org/dfo/DFO_0000010>;
   rdfs:label "Exemptions From Copayment";
-  dc:description "An exemption from copayment typically contains the cause for exemption.";
+  dc:description "An exemption from copayment typically contains the cause for exemption." .
 
 dfo:Death_Registry a owl:Class;
   rdfs:subClassOf dfo:Databank_Family;
   rdfs:isDefinedBy <https://w3id.org/dfo/DFO_0000011>;
   rdfs:label "Death Registry";
-  dc:description "A death registry typically contains the principal cause of death.";
+  dc:description "A death registry typically contains the principal cause of death." .
