@@ -20,7 +20,7 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/dfo/DFO_0000001"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79273"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61393"/>
-        <dc:description xml:lang="en">Here a detailed description of databank family.</dc:description>
+        <dc:description xml:lang="en">A databank family is a group of data banks with similar record prompts and originators.</dc:description>
         <dc:identifier>DFO:0000001</dc:identifier>
         <ns0:identifier>DFO_0000001</ns0:identifier>
     </rdf:Description>
