@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://semanticscience.org/resource/resource.xsl" ?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:ns0="http://purl.org/dc/elements/1.1/"
+         xmlns:obo="http://purl.obolibrary.org/obo/">
+
+    <rdf:Description rdf:about="https://w3id.org/dfo/DFO_0000001">
+        <rdfs:label xml:lang="en">Databank Family</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C142490">
+        <rdfs:label xml:lang="en">Data Originator</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C45262">
+        <rdfs:label xml:lang="en">Collected By</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GSSO_005375">
+        <rdfs:label xml:lang="en">cue</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C44476">
+        <rdfs:label xml:lang="en">Content</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://w3id.org/dfo/Birth_Registry">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label xml:lang="en">Birth Registry</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dfo/DFO_0000005"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dfo/DFO_0000001"/>
+        <dc:description xml:lang="en">A birth registry typically contains information on the mother, on the pregnancy, on the delivery, and on the child(ren).</dc:description>
+        <dc:identifier>DFO:0000005</dc:identifier>
+        <ns0:identifier>DFO_0000005</ns0:identifier>
+        <obo:NCIT_C142490 xml:lang="en">Public health/ statistical authority</obo:NCIT_C142490>
+        <obo:NCIT_C45262 xml:lang="en">Hospitals or midwives or children health services</obo:NCIT_C45262>
+        <obo:GSSO_005375 xml:lang="en">Live births observed in hospital or at the first visit of the child. If the prompt is delivery in hospital, stillbirths prompt a record and are distinguished from spontaneous abortion by the gestational age at labor</obo:GSSO_005375>
+        <obo:NCIT_C44476 xml:lang="en">Information on the mother, on the pregnancy, on the delivery, on the child(ren)</obo:NCIT_C44476>
+    </rdf:Description>
+
+</rdf:RDF>

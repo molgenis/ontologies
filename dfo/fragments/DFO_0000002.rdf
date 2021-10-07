@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://semanticscience.org/resource/resource.xsl" ?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:ns0="http://purl.org/dc/elements/1.1/"
+         xmlns:obo="http://purl.obolibrary.org/obo/">
+
+    <rdf:Description rdf:about="https://w3id.org/dfo/DFO_0000001">
+        <rdfs:label xml:lang="en">Databank Family</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C142490">
+        <rdfs:label xml:lang="en">Data Originator</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C45262">
+        <rdfs:label xml:lang="en">Collected By</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GSSO_005375">
+        <rdfs:label xml:lang="en">cue</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C44476">
+        <rdfs:label xml:lang="en">Content</rdfs:label>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://w3id.org/dfo/Hospital_Administrative_Records">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+        <rdfs:label xml:lang="en">Hospital Administrative Records</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/dfo/DFO_0000002"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dfo/DFO_0000001"/>
+        <dc:description xml:lang="en">A hospital administrative records typically contains diagnosis, signs, symptoms observed, main diagnosis that led to the hospitalization, administration of procedures, specialty of the ward, and outcome.</dc:description>
+        <dc:identifier>DFO:0000002</dc:identifier>
+        <ns0:identifier>DFO_0000002</ns0:identifier>
+        <obo:NCIT_C142490 xml:lang="en">Healthcare payer</obo:NCIT_C142490>
+        <obo:NCIT_C45262 xml:lang="en">Healthcare service providers: hospitals</obo:NCIT_C45262>
+        <obo:GSSO_005375 xml:lang="en">Discharge from a hospitalization; a specialist encounter or emergency room visit may also prompt records</obo:GSSO_005375>
+        <obo:NCIT_C44476 xml:lang="en">Diagnosis/signs/ symptoms observed; main diagnosis that led to  the hospitalization; administration of procedures; specialty of the ward; outcome</obo:NCIT_C44476>
+    </rdf:Description>
+
+    <!-- close match? http://purl.obolibrary.org/obo/NCIT_C15253 -->
+
+</rdf:RDF>
