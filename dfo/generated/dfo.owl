@@ -22,48 +22,32 @@
         <IRI>https://orcid.org/0000-0002-4208-3583</IRI>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:rights"/>
-        <Literal>This ontology is distributed under a Attribution 4.0 International (CC BY 4.0) License - https://creativecommons.org/licenses/by/4.0/. Copyright: University Medical Center Groningen (2019-2021).</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
-        <Literal>Attribution 4.0 International (CC BY 4.0)</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
         <Literal>Eleanor Hyde &lt;e.j.hyde@umcg.nl&gt;</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
-        <IRI>https://github.com/molgenis/DatabankFamiliesOntology</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:date"/>
-        <Literal>2021-10-01</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:title"/>
-        <Literal>Databank Families Ontology</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <Literal>Here we describe the Databank Families Ontology</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
         <Literal>K. Joeri van der Velde &lt;k.j.van.der.velde@umcg.nl&gt;</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal>The Databank Family Ontology describes groups of data banks with similar record prompts and originators.</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
         <Literal>0.1</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/LicenseDocument"/>
-        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
+        <IRI>https://github.com/molgenis/ontologies/tree/main/dfo</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <Literal>Romin Pajouheshnia &lt;r.pajouheshnia@uu.nl&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <Literal>2021-10-08</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:language"/>
@@ -92,6 +76,10 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <IRI>https://orcid.org/0000-0002-6250-877X</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal>Databank Family Ontology</Literal>
     </Annotation>
     <Declaration>
         <Class abbreviatedIRI="obo:NCIT_C61393"/>
@@ -133,22 +121,10 @@
         <Class IRI="Registration_With_Healthcare_System"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/LicenseDocument"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:date"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dc:rights"/>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:language"/>
@@ -158,6 +134,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
