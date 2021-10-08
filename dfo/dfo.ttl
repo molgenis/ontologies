@@ -9,15 +9,12 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/dfo/> a owl:Ontology;
-  dc:title "Databank Families Ontology";
-  dc:description "Here we describe the Databank Families Ontology";
-  dc:date "2021-10-01";
+  dc:title "Databank Family Ontology";
+  dc:description "The Databank Family Ontology describes groups of data banks with similar record prompts and originators.";
+  dc:date "2021-10-08";
   owl:versionInfo "0.1";
   dc:language "en";
-  dc:rights "This ontology is distributed under a Attribution 4.0 International (CC BY 4.0) License - https://creativecommons.org/licenses/by/4.0/. Copyright: University Medical Center Groningen (2019-2021).";
-  dc:publisher <https://github.com/molgenis/DatabankFamiliesOntology>;
-  <http://purl.org/dc/terms/license> "Attribution 4.0 International (CC BY 4.0)";
-  <http://purl.org/dc/terms/LicenseDocument> <https://creativecommons.org/licenses/by/4.0/>;
+  dc:publisher <https://github.com/molgenis/ontologies/tree/main/dfo>;
   dc:creator 
     "Rosa Gini <rosa.gini@ars.toscana.it>", <https://orcid.org/0000-0002-6250-877X>,
     "Romin Pajouheshnia <r.pajouheshnia@uu.nl>", <https://orcid.org/0000-0002-4208-3583>;
