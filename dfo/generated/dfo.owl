@@ -15,8 +15,8 @@
     <Prefix name="sio" IRI="https://semanticscience.org/resource/"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="ordo" IRI="http://www.orpha.net/ORDO/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <IRI>https://orcid.org/0000-0002-4208-3583</IRI>
@@ -82,12 +82,6 @@
         <Literal>Databank Family Ontology</Literal>
     </Annotation>
     <Declaration>
-        <Class abbreviatedIRI="obo:NCIT_C61393"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:NCIT_C79273"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Birth_Registry"/>
     </Declaration>
     <Declaration>
@@ -151,11 +145,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Databank_Family"/>
-        <Class abbreviatedIRI="obo:NCIT_C61393"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Databank_Family"/>
-        <Class abbreviatedIRI="obo:NCIT_C79273"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Death_Registry"/>
