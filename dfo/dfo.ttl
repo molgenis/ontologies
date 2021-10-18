@@ -17,7 +17,8 @@
   dc:publisher <https://github.com/molgenis/ontologies/tree/main/dfo>;
   dc:creator 
     "Rosa Gini <rosa.gini@ars.toscana.it>", <https://orcid.org/0000-0002-6250-877X>,
-    "Romin Pajouheshnia <r.pajouheshnia@uu.nl>", <https://orcid.org/0000-0002-4208-3583>;
+    "Romin Pajouheshnia <r.pajouheshnia@uu.nl>", <https://orcid.org/0000-0002-4208-3583>,
+    "Nicolas H. Thurin <nicolas.thurin@u-bordeaux.fr>, <https://orcid.org/0000-0003-3589-0819>";
   dc:contributor
    "Eleanor Hyde <e.j.hyde@umcg.nl>", <https://orcid.org/0000-0003-2744-0017>,
    "K. Joeri van der Velde <k.j.van.der.velde@umcg.nl>", <https://orcid.org/0000-0002-0934-8375>,
