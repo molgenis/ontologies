@@ -4,7 +4,8 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:dc="http://purl.org/dc/terms/"
-         xmlns:ns0="http://purl.org/dc/elements/1.1/">
+         xmlns:ns0="http://purl.org/dc/elements/1.1/"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C79273">
         <rdfs:label xml:lang="en">Family Collection</rdfs:label>
@@ -18,8 +19,9 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
         <rdfs:label xml:lang="en">Databank Family</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/dfo/DFO_0000001"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79273"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61393"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79273"/>
+        <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/NCIT_C61393"/>
         <dc:description xml:lang="en">A databank family is a group of data banks with similar record prompts and originators.</dc:description>
         <dc:identifier>DFO:0000001</dc:identifier>
         <ns0:identifier>DFO_0000001</ns0:identifier>

@@ -15,8 +15,8 @@
     <Prefix name="sio" IRI="https://semanticscience.org/resource/"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="ordo" IRI="http://www.orpha.net/ORDO/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <IRI>https://orcid.org/0000-0002-4208-3583</IRI>
@@ -24,6 +24,10 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
         <Literal>Eleanor Hyde &lt;e.j.hyde@umcg.nl&gt;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal>Nicolas H. Thurin &lt;nicolas.thurin@u-bordeaux.fr&gt;, &lt;https://orcid.org/0000-0003-3589-0819&gt;</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
@@ -81,12 +85,6 @@
         <AnnotationProperty abbreviatedIRI="dc:title"/>
         <Literal>Databank Family Ontology</Literal>
     </Annotation>
-    <Declaration>
-        <Class abbreviatedIRI="obo:NCIT_C61393"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:NCIT_C79273"/>
-    </Declaration>
     <Declaration>
         <Class IRI="Birth_Registry"/>
     </Declaration>
@@ -151,11 +149,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Databank_Family"/>
-        <Class abbreviatedIRI="obo:NCIT_C61393"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Databank_Family"/>
-        <Class abbreviatedIRI="obo:NCIT_C79273"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Death_Registry"/>
